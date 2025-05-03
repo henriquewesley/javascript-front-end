@@ -13,7 +13,7 @@ const companies = [
 ];
 
 const over10percent = company => {
-  company.marketValue - (company.marketValue / 10);
+  company.marketValue = company.marketValue - (company.marketValue / 10);
   return company;
 }
 const filterCompanies = company => company.foundedOn > 1980;
